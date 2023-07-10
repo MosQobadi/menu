@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Menu</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#main-courses">Main Courses</a>
+          </li>
+          <li>
+            <a href="#drinks">Drinks</a>
+          </li>
+          <li>
+            <a href="#starters">Starters</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="starters">
+      <div class="container">
+        <h2>Starters</h2>
+        <div class="grid">
+          <!-- Starter Item -->
+          <div class="card">
+            <img src="./images/starters/20230710_151949.jpg" alt="Starter" />
+            <div class="card-content">
+              <h3 class="card-title">Starter Name</h3>
+              <p class="card-text">Price: $X</p>
+              <p class="card-text">Main Ingredient: Ingredient Name</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/starters/20230710_151951.jpg" alt="Starter" />
+            <div class="card-content">
+              <h3 class="card-title">Starter Name</h3>
+              <p class="card-text">Price: $X</p>
+              <p class="card-text">Main Ingredient: Ingredient Name</p>
+            </div>
+          </div>
+          <!-- Add more starter items here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="main-courses">
+      <div class="container">
+        <h2>Main Courses</h2>
+        <div class="grid">
+          <!-- Main Course Item -->
+          <div class="card">
+            <img src="images/20230710_152024.jpg" alt="Main Course" />
+            <div class="card-content">
+              <h3 class="card-title">Main Course Name</h3>
+              <p class="card-text">Price: $X</p>
+              <p class="card-text">Main Ingredient: Ingredient Name</p>
+            </div>
+          </div>
+          <!-- Add more main course items here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="drinks">
+      <div class="container">
+        <h2>Drinks</h2>
+        <div class="grid">
+          <!-- Drink Item -->
+          <div class="card">
+            <img src="./images/drinks/20230706_140825.jpg" alt="Drink" />
+            <div class="card-content">
+              <h3 class="card-title">Drink Name</h3>
+              <p class="card-text">Price: $X</p>
+              <p class="card-text">Main Ingredient: Ingredient Name</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/drinks/20230710_151959.jpg" alt="Drink" />
+            <div class="card-content">
+              <h3 class="card-title">Drink Name</h3>
+              <p class="card-text">Price: $X</p>
+              <p class="card-text">Main Ingredient: Ingredient Name</p>
+            </div>
+          </div>
+          <!-- Add more drink items here -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Optional: Add smooth scrolling for anchor links
+      const anchorLinks = document.querySelectorAll('a[href^="#"]');
+      for (let anchor of anchorLinks) {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          document.querySelector(targetId).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
